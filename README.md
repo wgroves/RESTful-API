@@ -4,7 +4,7 @@ Simple API that takes GET and POST requests to add or return parent or children 
 
 The application has 3 parts. The sqlalchemy_db file initializes the database and the relational objects for child and parent. The DBController class handles SQL queries, and takes input in order to add or return a parent or child. The app.py file initializes sqlalchemy_db (thereby creating the database) and runs the web server.
 
-To run the app, type python app.py
+To run the app, type python app.py in a terminal
 
 Here are the ways to add and request a child or parent (http url is: http://127.0.0.1:5000/)
 
