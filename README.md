@@ -7,10 +7,12 @@ The application has 3 parts. The sqlalchemy_db file initializes the database and
 Here are the ways to add and request a child or parent
   GET:
     /child/<childid> --> returns a JSON object of the corresponding childid
+    
     /parent/<parentid> --> returns a JSON object of the corresponding parent
 
   POST
     /addParent --> adds a Parent with a JSON request in the form of: {"name": name}
+    
     /addChild --> adds a Child with a JSON request in the form of: {"name": name, "p_id": id}
 
 Some potential scalability issues would be adding more fields to the child or parent tables. This would require me to change the DBController code and the app.py code.
